@@ -1,0 +1,11 @@
+var prenom="Thierry";
+let age=44;
+console.log(prenom);
+prenom = "Martin";
+console.log(prenom);
+console.log(age);
+age = age+1;
+console.log(age);
+age+=1;
+console.log(age);
+alert("La valeur est:"+age);
