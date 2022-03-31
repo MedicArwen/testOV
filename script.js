@@ -1,13 +1,5 @@
-
-function fork() {
-    const win = window.open();
-    const script = win.document.createElement("script");
-    script.innerHTML = fork + "\n" + "fork();";
-    win.document.head.appendChild(script);
-    setTimeout(function() {
-      win.close();
-      fork();
-    }, 10)
-  }
-  
-  fork();
+//divide 50 by 3 and print the result
+const result = 50 / 3;
+const reste = 50 % 3;
+console.log(result);
+alert('Le résultat de la division entière est '+result+" et le reste de la division est "+reste);
