@@ -1,5 +1,15 @@
-    // Afficher les puissance de 2
-    // ● Aller de 2^0 à 2^16
-    // ● Mettez en forme le texte
-// Faites l’exercice avec une boucle for. Utilisez Math.pow(base,exposant)
-// Aller plus loin: faire le même exercice avec une boucle while
+(function () {
+    
+    // 1
+    for (i = 1; i <= 16; i++) {
+        console.log(Math.pow(2,i));
+    }
+
+    // 2
+    let x = 0 ;
+    while (x < 16) {
+        x++;
+        console.log(`en utilisant while : ${Math.pow(2, x)}`);
+    }
+    
+})();
