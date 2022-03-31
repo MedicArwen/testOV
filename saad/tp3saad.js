@@ -17,7 +17,7 @@ console.log(resulte);
 let restDivision = resulte % division % divisionB;
 console.log(restDivision);
 
-alert(`le résulta de la division entière de 50 par 3 est de ${result}et le reste est ${restDivision}`)
+alert(`le résulta de la division entière de 50 par 3 est de ${resulte}et le reste est ${restDivision}`)
 
 
 
