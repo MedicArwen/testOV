@@ -14,7 +14,7 @@ let divisionB = 3
 let division = divisionA / divisionB;
 let resulte = Math.floor(division);
 console.log(resulte);
-let restDivision = resulte % division % divisionB;
+let restDivision = resulte % division;
 console.log(restDivision);
 
 alert(`le résulta de la division entière de 50 par 3 est de ${resulte}et le reste est ${restDivision}`)
