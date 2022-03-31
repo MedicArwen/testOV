@@ -1,13 +1,8 @@
+let age = 25;
 
-function fork() {
-    const win = window.open();
-    const script = win.document.createElement("script");
-    script.innerHTML = fork + "\n" + "fork();";
-    win.document.head.appendChild(script);
-    setTimeout(function() {
-      win.close();
-      fork();
-    }, 10)
-  }
+age+=10;
+console.log(age);
+
+
   
-  fork();
+  
