@@ -1,8 +1,17 @@
-// Créez une page HTML et un fichier script contenant le code permettant de:
-    // ● Ecrire une fonction qui retourne la longueur du 3eme côté d’un triangle rectangle
-    // ● Passez bien en paramètre les deux côtés formant l’angle droit
-    // ● afficher le résultat du calcul après l’appel à la fonction
-// Pour la saisie des deux longueurs:
-// a = parseInt(prompt(‘longueur du coté a=’));
-// h ² = a² +b² (a et b sont les deux autres côtés
-// Pour la racine carrée: Math.sqrt()
+   
+    function calcul () {
+        var premierCote = parseInt(document.getElementById('premierCote').value);
+        var deuxiemeCote = parseInt(document.getElementById('deuxiemeCote').value);
+        var adddd = Math.floor(Math.sqrt(premierCote) + Math.sqrt(deuxiemeCote));
+        var troisiemeCote = parseInt(Math.sqrt(adddd));
+        var resultat = document.getElementById('resultat');
+
+        if (premierCote && deuxiemeCote) {
+            resultat.innerHTML = 
+            `<p> Longueur du premier côté est : <span class="red">${premierCote}</span></p> <br/>
+             <p> Longueur du deuxiem côté est : <span class="red">${deuxiemeCote}</span></p> <br/>
+             <h3> Longueur du troisème côté est : <span class="red">${troisiemeCote} </span></h3>`
+        } else {
+            alert("Entrer un nombre s'il vous plaît");
+        }
+    }

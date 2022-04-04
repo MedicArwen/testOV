@@ -6,8 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <form>
+        <h2>Calculation des côtés de triangle</h2>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="premierCote">1er</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="premierCote" id="premierCote" placeholder="Entrer un nombre" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="deuxiemeCote">2em</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="deuxiemeCote" id="deuxiemeCote" placeholder="Entrer un nombre" required>
+            </div>
+        </div>
+
+        <button type="button" onclick="calcul();">Calculer</button>
+
+        <div id="resultat">
+            <h3>Resultat</h3>
+        </div>
+    </form>
 </body>
 </html>

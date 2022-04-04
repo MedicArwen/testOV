@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+h2 {
+    color: white;
+    text-align: center;
+    background-color: rgba(164, 193, 143, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+form {
+    background-color: rgb(201, 218, 188);
+    padding: 20px;
+    margin: 20px auto;
+    width: 30%;
+}
+input, label {
+    margin-bottom: 5px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 2px;
+}
+label {
+    display: inline-block;
+    width: 40%;
+}
+button {
+    margin: 10px auto;
+}
+.col-25 {
+    float:left;
+    width:25%;
+}
+.col-75 {
+    float: left;
+    width:75%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#resultat {
+    background-color: rgba(255, 255, 255, 0.5);
+    width:100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+#resultat p, #resultat h3 {
+    margin:0;
+    padding:0;
+}
+.red {
+    color: red;
+}
